@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful & Semantic HTML5 Skeleton</title>
+    <style>
+        /* Minimal layout styling just for structural visibility */
+        body { font-family: system-ui, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 1rem; color: #333; }
+        header, nav, main, section, footer { padding: 1rem; margin: 0.5rem 0; border: 1px solid #e0e0e0; border-radius: 4px; }
+        nav a { margin-right: 1rem; text-decoration: none; color: #0066cc; }
+        .flex-container { display: flex; gap: 1rem; justify-content: space-between; align-items: center; }
+        .btn { background: #0066cc; color: white; padding: 0.5rem 1rem; border: none; border-radius: 4px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    
+    <header class="flex-container">
+        <h1>My Accessible Site</h1>
+        <nav aria-label="Main Navigation">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main content area wrapper (only one per page) -->
+    <main id="content">
+        <article>
+            <header>
+                <h2>The Art of Writing Clean Markup</h2>
+                <p>Published on <time datetime="2026-10-24">October 24, 2026</time> by Developer</p>
+            </header>
+            
+            <p>Writing **"good" HTML code** means focusing on three core pillars: readability, accessibility, and search engine optimization (SEO). By choosing elements based on their meaning rather than their visual look, you build a resilient skeleton for the web.</p>
+            
+            <section id="principles">
+                <h3>Core Implementation Principles</h3>
+                <ul>
+                    <li><strong>Semantic Layouts:</strong> Swap generic divs for structured components like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code>.</li>
+                    <li><strong>Rigid Hierarchy:</strong> Keep heading tags structural (<code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>) instead of using them for font resizing.</li>
+                    <li><strong>Implicit Accessibility:</strong> Always attach <code>alt</code> text to descriptive images and link <code>&lt;label&gt;</code> nodes directly to form controls.</li>
+                </ul>
+            </section>
+
+            <section id="interactive">
+                <h3>Explicit Intent Actions</h3>
+                <p>Use anchor tags exclusively to change URLs, and buttons strictly for executing programmatic actions:</p>
+                <div class="flex-container">
+                    <a href="https://whatwg.org" target="_blank" rel="noopener" class="btn">Read HTML Specification</a>
+                    <button type="button" class="btn" onclick="alert('Action triggered!')">Interactive Button</button>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <!-- Global footer area -->
+    <footer>
+        <p>&copy; 2026 Semantic Web Initiatives. Formatted cleanly using two-space nesting indents.</p>
+    </footer>
+
+</body>
+</html>
